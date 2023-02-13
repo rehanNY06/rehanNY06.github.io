@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            
+            <a href="#"><img src="img/shake-shack-logo.png" class="logo"></a>
+            <ul>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Not Any Burger<br>It's <span>Shake Shack</span></h2>
+                <p>As we grew into a global business, our mission to Stand For Something Good expanded to include taking care of our team, sourcing premium ingredients from partners with the same dedication to quality, designing our Shacks responsibly, supporting our communities through donations, events, and volunteering—and much more.</p>
+                <a href="https://shakeshack.com/#/">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src = "img/img1.jpeg" class="shack">
+            </div>
+        </div>
+        <ul class = "thumb">
+            <li><img src="img/img1.jpeg" onclick="imgSlider('img/img1.jpeg');changeCircleColor('#017143')"></li>
+            <li><img src="img/img2.jpeg" onclick="imgSlider('img/img2.jpeg');changeCircleColor('#eb7495')"></li>
+            <li><img src="img/img3.jpeg" onclick="imgSlider('img/img3.jpeg');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class = "sci">
+            <li><a href="https://www.facebook.com/shakeshack/"><img src="img/facebook.png"></a></li>
+            <li><a href="https://twitter.com/shakeshack?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="img/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/shakeshack/?hl=en"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything)
+        {
+            document.querySelector('.shack').src = anything;
+        }
+        function changeCircleColor(color)
+        {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
